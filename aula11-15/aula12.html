@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 12 Formulários</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        label{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <form action="#" method="get" target="_blank">
+       <p>Falar qualquer coisa</p>
+       <p>
+        <label for="nome">
+            Nome:
+        </label>
+        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+       </p>
+        <p>
+        <label for="dev">
+            Sou Dev?
+        </label>
+        <input type="checkbox" name="dev" id="dev">
+       </p>
+       <p>
+        <button type="reset">Resetar</button>
+        <button type="submit">Enviar</button>
+       </p>
+    </form>
+    <section>
+        <h1>Minhas Brincadeiras</h1>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Quiz do namoro</legend>
+                <p>
+                    <label for="Show">Em qual show foi nosso primeiro beijo?</label>
+                    <input type="text" name="Show" id="Show">
+                </p>
+                <p>
+                    <label for="mes">Em qual mês começamos a namorar?</label>
+                    <input type="month" name="mes" id="mes">
+                </p>
+                <p>
+                    <h3>local do primeiro encontro?</h3>
+                    <label for="encontro">Carro</label>
+                    <input type="checkbox" name="encontro" id="encontro">
+                    <br>
+                    <label for="paia">Praia</label>
+                    <input type="checkbox" name="paia" id="paia">
+                    <br>
+                    <label for="boa">Boate</label>
+                    <input type="checkbox" name="boa" id="boa">
+                </p>
+            </fieldset>
+        </form>
+    </section>
 </body>
 </html>
