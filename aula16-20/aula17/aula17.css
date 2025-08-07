@@ -1,1 +1,23 @@
 @charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
+
+[meu-atributo~="valor2"]{
+    color: red;
+}
+[Teste^="com"]{
+    color: blue;
+}
+/*
+~= -> valor inteiro do atributo
+^= -> valor inicial do atributo
+$= -> valor do final do atributo
+*= -> cntém no valor
+*/
