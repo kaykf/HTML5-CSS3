@@ -1,1 +1,18 @@
 @charset "UTF-8";
+
+p:not(.meio){
+    color: blue;
+}
+
+input:not(:checked) + p{
+    background-color: red;
+}
+ul li:nth-child(even){
+    background-color: purple;
+}
+ul li:nth-child(odd){
+    background-color: aqua;
+}
+ul li:nth-child(4n){
+    color: white;
+}
